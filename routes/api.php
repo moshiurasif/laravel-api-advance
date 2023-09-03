@@ -21,6 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Route::get('tasks', [TaskController::class, 'index']);
 
-Route::apiResource('tasks', TaskController::class)->only([
-    'index', 'store', 'show'
-]);
+Route::apiResource('tasks', TaskController::class);
